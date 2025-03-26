@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LendLocal - Lender/Borrower Form</title>
+    <link rel="stylesheet" href="9switch.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LendLocal - Lender/Borrower Form</h1>
+        <button id="switchButton">Switch to Borrower</button>
+
+        <form id="lenderForm" class="active">
+            <h2>Lender Information</h2>
+            <h3>Resource Information</h3>
+            <label for="itemList">List of Items Available for Lending:</label>
+            <textarea id="itemList" name="itemList" rows="4" placeholder="Enter item descriptions and photos" required></textarea>
+
+            <label for="itemCondition">Condition of Items:</label>
+            <select id="itemCondition" name="itemCondition" required>
+                <option value="" disabled selected>Select condition</option>
+                <option value="new">New</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="needs-repair">Needs Repair</option>
+            </select>
+
+            <label for="usageInstructions">Usage Instructions:</label>
+            <textarea id="usageInstructions" name="usageInstructions" rows="4" placeholder="Enter usage instructions" required></textarea>
+
+            <label for="lendingTerms">Lending Terms:</label>
+            <textarea id="lendingTerms" name="lendingTerms" rows="4" placeholder="Enter lending duration, fees, and security deposit" required></textarea>
+
+            <h3>Skills and Services Information</h3>
+            <label for="skillsOffered">Skills or Services Offered:</label>
+            <textarea id="skillsOffered" name="skillsOffered" rows="4" placeholder="Enter skill descriptions" required></textarea>
+
+            <label for="availability">Availability Schedule:</label>
+            <textarea id="availability" name="availability" rows="4" placeholder="Enter availability schedule" required></textarea>
+
+            <label for="experienceLevel">Experience Level:</label>
+            <select id="experienceLevel" name="experienceLevel" required>
+                <option value="" disabled selected>Select experience level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+            </select>
+
+            <label for="certification">Certification or Proof of Skill (optional):</label>
+            <input type="file" id="certification" name="certification" accept=".jpg, .jpeg, .png, .pdf">
+
+            <h3>Lending Preferences</h3>
+            <label for="lendingDuration">Preferred Lending Duration:</label>
+            <select id="lendingDuration" name="lendingDuration" required>
+                <option value="" disabled selected>Select lending duration</option>
+                <option value="short-term">Short-term</option>
+                <option value="long-term">Long-term</option>
+            </select>
+
+            <label for="maxBorrowers">Maximum Number of Borrowers at a Time:</label>
+            <input type="number" id="maxBorrowers" name="maxBorrowers" min="1" required>
+
+            <label for="specialRequirements">Special Requirements or Instructions:</label>
+            <textarea id="specialRequirements" name="specialRequirements" rows="4" placeholder="Enter any special requirements" required></textarea>
+        </form>
+
+        <form id="borrowerForm" class="hidden">
+            <h2>Borrower Information</h2>
+            <h3>Resource Needs</h3>
+            <label for="itemsNeeded">Specific Items Needed:</label>
+            <textarea id="itemsNeeded" name="itemsNeeded" rows="4" placeholder="Enter item descriptions" required></textarea>
+
+            <label for="purposeOfUse">Purpose of Use:</label>
+            <textarea id="purposeOfUse" name="purposeOfUse" rows="4" placeholder="Enter the purpose of using the items" required></textarea>
+
+            <label for="borrowingDuration">Preferred Borrowing Duration:</label>
+            <input type="text" id="borrowingDuration" name="borrowingDuration" placeholder="Enter preferred borrowing duration" required>
+
+            <label for="specialRequirements">Any Special Requirements:</label>
+            <textarea id="specialRequirements" name="specialRequirements" rows="4" placeholder="Enter any special requirements" required></textarea>
+
+            <h3>Skills and Services Needs</h3>
+            <label for="skillsNeeded">Specific Skills or Services Needed:</label>
+            <textarea id="skillsNeeded" name="skillsNeeded" rows="4" placeholder="Enter skill descriptions" required></textarea>
+
+            <label for="preferredSchedule">Preferred Schedule:</label>
+            <textarea id="preferredSchedule" name="preferredSchedule" rows="4" placeholder="Enter preferred schedule" required></textarea>
+
+            <label for="specialQualifications">Any Special Requirements or Qualifications:</label>
+            <textarea id="specialQualifications" name="specialQualifications" rows="4" placeholder="Enter any special requirements or qualifications" required></textarea>
+
+            <h3>Experience and Feedback</h3>
+            <label for="previousExperience">Previous Borrowing Experience:</label>
+            <select id="previousExperience" name="previousExperience" required>
+                <option value="" disabled selected>Select experience</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="feedback">Feedback from Previous Lenders (optional):</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Enter feedback from previous lenders"></textarea>
+
+            <label for="ratings">Ratings and Reviews (if available):</label>
+            <textarea id="ratings" name="ratings" rows="4" placeholder="Enter ratings and reviews"></textarea>
+        </form>
+
+        <form id="communityForm" class="hidden">
+            <h2>Community Information</h2>
+            <label for="agreement">Agreement to Community Guidelines and Code of Conduct:</label>
+            <input type="checkbox" id="agreement" name="agreement" required>
+
+            <label for="feedbackConsent">Consent to Share Feedback and Ratings:</label>
+            <input type="checkbox" id="feedbackConsent" name="feedbackConsent" required>
+
+            <label for="communityParticipation">Willingness to Participate in Community Events or Forums (optional):</label>
+            <textarea id="communityParticipation" name="communityParticipation" rows="4" placeholder="Enter your willingness to participate"></textarea>
+        </form>
+
+        <form id="securityForm" class="hidden">
+            <h2>Security Information</h2>
+            <label for="captcha">CAPTCHA Verification:</label>
+            <input type="text" id="captcha" name="captcha" placeholder="Enter the CAPTCHA text" required>
+
+            <label for="twoFactorAuth">Two-Factor Authentication (2FA) Setup:</label>
+            <input type="text" id="twoFactorAuth" name="twoFactorAuth" placeholder="Enter your 2FA code" required>
+        </form>
+
+        <button type="submit" id="submitButton">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

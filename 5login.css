@@ -1,0 +1,85 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Updated background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards; /* Animation for fade-in */
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: #4CAF50; /* Earthy Green */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards; /* Animation for fade-in */
+}
+
+/* Subheading styling */
+h2 {
+    color: #424242; /* Deep Charcoal for better readability */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards; /* Animation for fade-in */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards; /* Animation for fade-in */
+}
+
+/* Input styling */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #CDDC39; /* Bright Lime */
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF5722; /* Sunset Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E64A19; /* Darker shade of Sunset Orange */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

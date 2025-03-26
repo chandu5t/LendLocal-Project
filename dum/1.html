@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LendLocal - Borrow Items</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><strong>LendLocal</strong></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lend.html">Lend</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Borrow Items</h1>
+        <div class="filter-bar">
+            <input type="text" id="search" placeholder="Search for items...">
+            <button onclick="filterItems()">Search</button>
+            <select id="category-filter" onchange="filterItems()">
+                <option value="all">All Categories</option>
+                <option value="books">Books</option>
+                <option value="farming equipments">Farming Equipments</option>
+                <option value="gardening tools">Gardening Tools</option>
+                <option value="furniture">Furniture</option>
+                <option value="outdoor gears">Outdoor Gears</option>
+                <option value="craft supply">Craft Supply</option>
+                <option value="tutoring services">Tutoring Services</option>
+            </select>
+        </div>
+
+        <div class="items-container" id="items-container">
+            <!-- Example item structure for borrowing -->
+            <!-- books borrowing -->
+            <div class="item" data-category="books">
+                <img src="books images/A Man Called Ove.webp" alt="A Man Called Ove">
+                <h3>A Man Called Ove</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="books">
+                <img src="books images/death-an-inside-story-original.webp" alt="death-an-inside-story-original">
+                <h3>death-an-inside-story-original</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="books">
+                <img src="books images/The Art of Laziness.webp" alt="The Art of Laziness">
+                <h3>The Art of Laziness</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="books">
+                <img src="books images/The Art of War.webp" alt="The Art of War">
+                <h3>The Art of War</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="books">
+                <img src="books images/The Mountain Is You.webp" alt="The Mountain Is You">
+                <h3>The Mountain Is You</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="books">
+                <img src="books images/The Psychology of Money.webp" alt="The Psychology of Money">
+                <h3>The Psychology of Money</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="books">
+                <img src="books images/YOU ONLY LIVE ONCE.webp" alt="YOU ONLY LIVE ONCE">
+                <h3>The Mountain Is You</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="books">
+                <img src="books images/Ayushyache Dhade Girvtana.jpg" alt="Ayushyache Dhade Girvtana">
+                <h3>Ayushyache Dhade Girvtana</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+
+            <!-- farming equipments borrowing -->
+            <div class="item" data-category="farming equipments">
+                <img src="farming images/crop cultivator.jpeg" alt="crop cultivator">
+                <h3>Crop Cultivator</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="farming equipments">
+                <img src="farming images/cultivator.jpeg" alt="cultivator">
+                <h3>cultivator</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="farming equipments">
+                <img src="farming images/plough.jpeg" alt="plough">
+                <h3>plough</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="farming equipments">
+                <img src="farming images/power tiller.jpeg" alt="power tiller">
+                <h3>power tiller</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="farming equipments">
+                <img src="farming images/rotavator.jpg" alt="rotavator">
+                <h3>rotavator</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="farming equipments">
+                <img src="farming images/seed drill.jpeg" alt="seed drill">
+                <h3>seed drill</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+
+            <!-- furniture borrowing -->
+            <div class="item" data-category="furniture">
+                <img src="furniture images/Desk Chair.jpg" alt="Desk Chair">
+                <h3>Desk Chair</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="furniture">
+                <img src="furniture images/Desk Lamp.jpg" alt="Desk Lamp">
+                <h3>Desk Lamp</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="furniture">
+                <img src="furniture images/Rocking Chair.webp" alt="Rocking Chair">
+                <h3>Rocking Chair</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="furniture">
+                <img src="furniture images/Sofas.webp" alt="Sofas">
+                <h3>Sofas</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="furniture">
+                <img src="furniture images/Study Tables.webp" alt="Study Tables">
+                <h3>Study Tables</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+            <div class="item" data-category="furniture">
+                <img src="furniture images/Wardrobes.webp" alt="Wardrobes">
+                <h3>Wardrobes</h3>
+                <p>Available to borrow</p>
+                <button onclick="borrowItem()">Borrow</button>
+            </div>
+
+
+            <!-- Add more items here -->
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LendLocal. All rights reserved.</p>
+    </footer>
+
+    <script src="3.js"></script>
+</body>
+
+</html>

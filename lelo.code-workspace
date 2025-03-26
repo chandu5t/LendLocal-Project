@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../c++"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "c++",
+		"files.associations": {
+			"iostream": "cpp",
+			"iosfwd": "cpp",
+			"*.tcc": "cpp"
+		},
+		"liveServer.settings.port": 5501
+	}
+}

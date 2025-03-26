@@ -1,0 +1,201 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Updated background color */
+}
+
+/* Header styling */
+header {
+    background-color: #FFFFFF; /* Light background for header */
+    color: #333; /* Dark text color for contrast */
+    padding: 10px 0;
+}
+
+.logo {
+    color: #4CAF50; /* Earthy Green */
+}
+
+/* Horizontal Image Styling */
+.horizontal-image {
+    width: 130%; /* Makes the image span the full width of its container */
+    max-width: 1000px; /* Limits the maximum width of the image */
+    display: block;
+    margin: 20px auto; /* Centers the image horizontally with some vertical space */
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid #FF9800; /* Adjusted border color */
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF9800; /* Adjusted button color */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hero section styling */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2196F3; /* Bright Blue */
+    color: white;
+}
+
+/* Button styling in the hero section */
+.btn {
+    background-color: #FF9800; /* Adjusted button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Services section styling */
+.service-list {
+    display: flex;
+    justify-content: space-between; /* Space between each service item */
+    padding: 20px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Horizontal and vertical gap between items */
+    padding: 20px;
+}
+
+.service-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(30% - 20px); /* Calculate width minus the gap */
+    box-sizing: border-box;
+    color: white; /* Text color */
+}
+
+/* Colors chosen for a professional, commercial look */
+.service-item1 {
+    background-color: #1E88E5; /* Blue - Trustworthy and reliable */
+}
+
+.service-item2 {
+    background-color: #43A047; /* Green - Growth and prosperity */
+}
+
+.service-item3 {
+    background-color: #F4511E; /* Orange - Energy and enthusiasm */
+}
+
+.service-item4 {
+    background-color: #8E24AA; /* Purple - Creativity and innovation */
+}
+
+.service-item5 {
+    background-color: #FB8C00; /* Deep Orange - Affordability and friendliness */
+}
+
+.service-item6 {
+    background-color: #00ACC1; /* Cyan - Clean and fresh */
+}
+
+.service-item7 {
+    background-color: #E53935; /* Red - Bold and confident */
+}
+
+.service-item8 {
+    background-color: #6D4C41; /* Brown - Stability and reliability */
+}
+
+/* Styling for service images */
+.service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add space between image and text */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50; /* Earthy Green */
+    color: white;
+}
+
+/* Styling for about and contact links */
+#contaact, #aboout {
+    list-style: none;
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF; /* Button color */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.nav-links a.button:active {
+    background-color: #003d7a; /* Even darker shade when clicked */
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Centered Video Styling */
+.centered-video {
+    width: 100%;
+    max-width: 1000px; /* Limits the maximum width of the video */
+    height: 700px; /* Set the height to your desired size */
+    display: block;
+    margin: 20px auto; /* Centers the video horizontally with some vertical space */
+    padding: 0;
+    object-fit: cover; /* Ensures the video covers the area without distortion */
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrower Interface</title>
+    <link rel="stylesheet" href="borrower_interface.css">
+</head>
+<body>
+    <header>
+        <h1>Borrower Interface</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Borrowed Items</a></li>
+                <li><a href="#">Borrowing History</a></li>
+                <li><a href="#">Account Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="borrowed-items">
+            <h2>Borrowed Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Lender</th>
+                        <th>Return Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="borrowed-items-list"></tbody>
+            </table>
+        </section>
+
+        <section id="borrowing-history">
+            <h2>Borrowing History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Lender</th>
+                        <th>Borrow Date</th>
+                        <th>Return Date</th>
+                    </tr>
+                </thead>
+                <tbody id="borrowing-history-list"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 LendLocal</p>
+    </footer>
+
+    <script src="interface.js"></script>
+</body>
+</html>

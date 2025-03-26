@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lender Interface</title>
+    <link rel="stylesheet" href="lender_interface.css">
+</head>
+<body>
+    <header>
+        <h1>Lender Interface</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Lent Items</a></li>
+                <li><a href="#">Lending History</a></li>
+                <li><a href="#">Account Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lent-items">
+            <h2>Lent Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Borrower</th>
+                        <th>Return Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="lent-items-list"></tbody>
+            </table>
+        </section>
+
+        <section id="lending-history">
+            <h2>Lending History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Borrower</th>
+                        <th>Lend Date</th>
+                        <th>Return Date</th>
+                    </tr>
+                </thead>
+                <tbody id="lending-history-list"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 LendLocal</p>
+    </footer>
+
+    <script src="interface.js"></script>
+</body>
+</html>

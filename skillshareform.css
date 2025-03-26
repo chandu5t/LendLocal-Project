@@ -1,0 +1,128 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container styling */
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: white;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out; /* Fade-in effect */
+}
+
+/* Heading styling */
+h1 {
+    color: #4CAF50; /* Earthy Green */
+    text-align: center;
+    margin-bottom: 30px; /* Space below heading */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 2px solid #CDDC39; /* Bright Lime */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px; /* Increased padding for better spacing */
+    background-color: #FAFAFA; /* Light background for fieldset */
+}
+
+/* Legend styling */
+legend {
+    color: #FF5722; /* Sunset Orange */
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333; /* Darker color for better readability */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Input, select, and textarea styling */
+input, select, textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    margin-bottom: 20px;
+    border: 2px solid #CDDC39; /* Bright Lime */
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for input, select, and textarea */
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50; /* Earthy Green */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Textarea resize */
+textarea {
+    resize: vertical;
+}
+
+/* Button styling */
+.add-skill-btn, .submit-btn {
+    width: 100%;
+    padding: 12px; /* Consistent padding for buttons */
+    background-color: #FF5722; /* Sunset Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover state */
+.add-skill-btn:hover, .submit-btn:hover {
+    background-color: #E64A19; /* Darker Sunset Orange */
+    transform: translateY(-2px);
+}
+
+/* Button active state */
+.add-skill-btn:active, .submit-btn:active {
+    background-color: #D84315; /* Even Darker Sunset Orange */
+    transform: translateY(0);
+}
+
+/* Button focus state */
+.add-skill-btn:focus, .submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3); /* Green outline on focus */
+}
+
+/* Skill item styling */
+.skill-item {
+    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

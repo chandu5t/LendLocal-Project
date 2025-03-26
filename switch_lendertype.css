@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.switch-container {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%; /* Ensure full width within max-width */
+}
+
+/* Heading styling */
+h1 {
+    color: #4CAF50; /* Earthy Green */
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Button Container */
+.switch-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Button Styling */
+.switch-btn {
+    padding: 15px 25px;
+    font-size: 16px;
+    background-color: #FF5722; /* Sunset Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Button Hover State */
+.switch-btn:hover {
+    background-color: #E64A19; /* Darker Sunset Orange */
+    transform: translateY(-2px);
+}
+
+/* Button Active State */
+.switch-btn:active {
+    background-color: #D84315; /* Even Darker Sunset Orange */
+    transform: translateY(0);
+}
+
+/* Button Focus State */
+.switch-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3); /* Green outline on focus */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
