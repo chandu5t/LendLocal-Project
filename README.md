@@ -99,7 +99,7 @@ LendLocal/
 ### **Database**
 
 * MySQL
-* MongoDB (optional extension)
+
 
 ### **Tools Used**
 
@@ -108,7 +108,7 @@ LendLocal/
 * Chrome Developer Tools
 
 
-
+---
 ## ⚙️ Installation & Setup
 
 ### 📌 Prerequisites
@@ -142,7 +142,7 @@ For **WAMP**:
 C:\wamp64\www\LendLocal
 ```
 
----
+
 
 ### 🛢 3. Database Setup
 
@@ -166,7 +166,7 @@ Example:
 $conn = mysqli_connect("localhost", "root", "", "lendlocal");
 ```
 
----
+
 
 ### ▶️ 4. Run the Project
 
@@ -178,7 +178,7 @@ http://localhost/LendLocal/index11.html
 
 You're now ready to explore **LendLocal**!
 
-
+---
 
 ## 🎮 Usage Guide
 
@@ -208,8 +208,7 @@ You're now ready to explore **LendLocal**!
 ## 👥 Contributor
 
 * **Chandrakant Thakare**
-  GitHub: [https://github.com/chandu5t](https://github.com/chandu5t) 
-  
+  GitHub: [https://github.com/chandu5t](https://github.com/chandu5t)  
   Email: [chandu01thakare@gmail.com](mailto:chandu01thakare@gmail.com) 
 
 
@@ -227,7 +226,7 @@ You are free to use, modify, and distribute this project.
 Special thanks to:
 
 * VIIT Pune (Department of CSE – AI)
-* Faculty & Mentors
+* Faculty & Mentors : Mrs. Pradnya Mehta & Dr. Nilesh Sable
 * Community volunteers who helped with design inspiration
 
 LendLocal aims to promote **resource optimization, sustainability, and collaboration**.
