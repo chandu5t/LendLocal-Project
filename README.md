@@ -16,7 +16,7 @@ Because many households have underutilized items that others need. LendLocal pro
 
 📌 **Starting Page** → `index11.html`
 
----
+
 
 ## ✨ Key Features
 
@@ -32,7 +32,7 @@ Because many households have underutilized items that others need. LendLocal pro
 * **🎨 Beautiful UI:** Clean and interactive styling inspired by modern e-commerce design.
 * **🔒 Secure Backend:** PHP-based backend with MySQL database connectivity.
 
----
+
 
 ## 🏗️ System Architecture
 
@@ -61,7 +61,7 @@ LendLocal is structured into 3 major components:
 6. Handles payment (optional demo)
 7. Views borrowed items and history
 
----
+
 
 ## 📂 Project Structure
 
@@ -82,7 +82,7 @@ LendLocal/
 └───uploads/                      # Uploaded images & documents
 ```
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -107,7 +107,7 @@ LendLocal/
 * XAMPP / WAMP (for PHP + MySQL)
 * Chrome Developer Tools
 
----
+
 
 ## ⚙️ Installation & Setup
 
@@ -118,7 +118,6 @@ LendLocal/
 * Browser (Chrome recommended)
 * Git
 
----
 
 ### 📥 1. Clone the Repository
 
@@ -127,7 +126,7 @@ git clone https://github.com/chandu5t/LendLocal-Project.git
 cd LendLocal-Project
 ```
 
----
+
 
 ### 🔧 2. Move Project to Server Directory
 
@@ -179,7 +178,7 @@ http://localhost/LendLocal/index11.html
 
 You're now ready to explore **LendLocal**!
 
----
+
 
 ## 🎮 Usage Guide
 
@@ -209,18 +208,19 @@ You're now ready to explore **LendLocal**!
 ## 👥 Contributor
 
 * **Chandrakant Thakare**
-  GitHub: [https://github.com/chandu5t](https://github.com/chandu5t)
+  GitHub: [https://github.com/chandu5t](https://github.com/chandu5t) 
+  
   Email: [chandu01thakare@gmail.com](mailto:chandu01thakare@gmail.com) 
 
 
----
+
 
 ## 📜 License
 
 Licensed under the [MIT License](LICENSE).
 You are free to use, modify, and distribute this project.
 
----
+
 
 ## 🙏 Acknowledgements
 
